@@ -721,7 +721,7 @@ class Request extends SymfonyRequest implements ArrayAccess
             return $request;
         }
 
-        $content = $request->content;
+        $content = $request->getContent();
 
         $request = (new static)->duplicate(
 
